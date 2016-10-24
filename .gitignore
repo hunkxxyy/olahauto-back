@@ -1,0 +1,6 @@
+# Ignore everything
+.env
+.idea/
+
+TEMP/
+workspace.xml

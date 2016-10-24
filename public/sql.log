@@ -1,0 +1,1 @@
+select * from `ingatlandb` where (`id` > ? and `archived` = ? and `archived` = ?) and true order by `id` asc limit 50

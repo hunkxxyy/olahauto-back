@@ -1,0 +1,256 @@
+
+-START----------------------------Array
+(
+    [4] => Array
+        (
+            [id] => 5
+            [parent_id] => 4
+            [top] => 0
+            [name] => 5.menüpont
+            [description] => 
+            [chield] => Array
+                (
+                )
+
+        )
+
+    [5] => Array
+        (
+            [id] => 6
+            [parent_id] => 5
+            [top] => 0
+            [name] => 6.menüpont
+            [description] => 
+            [chield] => Array
+                (
+                )
+
+        )
+
+    [6] => Array
+        (
+            [id] => 7
+            [parent_id] => 6
+            [top] => 0
+            [name] => 7.menüpont
+            [description] => 
+            [chield] => Array
+                (
+                )
+
+        )
+
+    [7] => Array
+        (
+            [id] => 8
+            [parent_id] => 7
+            [top] => 0
+            [name] => 8.menüpont
+            [description] => 
+            [chield] => Array
+                (
+                )
+
+        )
+
+    [8] => Array
+        (
+            [id] => 9
+            [parent_id] => 8
+            [top] => 0
+            [name] => 9.menüpont
+            [description] => 
+            [chield] => Array
+                (
+                )
+
+        )
+
+)
+
+-----------------------------Array
+(
+    [5] => Array
+        (
+            [id] => 6
+            [parent_id] => 5
+            [top] => 0
+            [name] => 6.menüpont
+            [description] => 
+            [chield] => Array
+                (
+                )
+
+        )
+
+    [6] => Array
+        (
+            [id] => 7
+            [parent_id] => 6
+            [top] => 0
+            [name] => 7.menüpont
+            [description] => 
+            [chield] => Array
+                (
+                )
+
+        )
+
+    [7] => Array
+        (
+            [id] => 8
+            [parent_id] => 7
+            [top] => 0
+            [name] => 8.menüpont
+            [description] => 
+            [chield] => Array
+                (
+                )
+
+        )
+
+    [8] => Array
+        (
+            [id] => 9
+            [parent_id] => 8
+            [top] => 0
+            [name] => 9.menüpont
+            [description] => 
+            [chield] => Array
+                (
+                )
+
+        )
+
+)
+
+-----------------------------Array
+(
+    [6] => Array
+        (
+            [id] => 7
+            [parent_id] => 6
+            [top] => 0
+            [name] => 7.menüpont
+            [description] => 
+            [chield] => Array
+                (
+                )
+
+        )
+
+    [7] => Array
+        (
+            [id] => 8
+            [parent_id] => 7
+            [top] => 0
+            [name] => 8.menüpont
+            [description] => 
+            [chield] => Array
+                (
+                )
+
+        )
+
+    [8] => Array
+        (
+            [id] => 9
+            [parent_id] => 8
+            [top] => 0
+            [name] => 9.menüpont
+            [description] => 
+            [chield] => Array
+                (
+                )
+
+        )
+
+)
+
+-----------------------------Array
+(
+    [6] => Array
+        (
+            [id] => 7
+            [parent_id] => 6
+            [top] => 0
+            [name] => 7.menüpont
+            [description] => 
+            [chield] => Array
+                (
+                )
+
+        )
+
+    [7] => Array
+        (
+            [id] => 8
+            [parent_id] => 7
+            [top] => 0
+            [name] => 8.menüpont
+            [description] => 
+            [chield] => Array
+                (
+                )
+
+        )
+
+    [8] => Array
+        (
+            [id] => 9
+            [parent_id] => 8
+            [top] => 0
+            [name] => 9.menüpont
+            [description] => 
+            [chield] => Array
+                (
+                )
+
+        )
+
+)
+
+-----------------------------Array
+(
+    [6] => Array
+        (
+            [id] => 7
+            [parent_id] => 6
+            [top] => 0
+            [name] => 7.menüpont
+            [description] => 
+            [chield] => Array
+                (
+                )
+
+        )
+
+    [7] => Array
+        (
+            [id] => 8
+            [parent_id] => 7
+            [top] => 0
+            [name] => 8.menüpont
+            [description] => 
+            [chield] => Array
+                (
+                )
+
+        )
+
+    [8] => Array
+        (
+            [id] => 9
+            [parent_id] => 8
+            [top] => 0
+            [name] => 9.menüpont
+            [description] => 
+            [chield] => Array
+                (
+                )
+
+        )
+
+)
+
+-----------------------------

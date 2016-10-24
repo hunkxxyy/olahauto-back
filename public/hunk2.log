@@ -1,0 +1,1 @@
+convert  -limit thread 1 -colorspace RGB images/bemutatkozas/original/glassxp.jpg -resize 300x351.6! images/bemutatkozas/kicsi/glassxp.jpg
