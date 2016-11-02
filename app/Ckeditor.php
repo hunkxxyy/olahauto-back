@@ -6,8 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Ckeditor extends Model
 {
-    protected $table='ckeditor';
-    protected $fillable=['index','filename','file'];
+    protected $table='images';
+    protected $fillable=['index','filename','file','pos'];
     /*ezek a képbeállítási globál paraméterek
     minden méretszám a magasságot jelzi*/
     public static $kepmeretek = [
@@ -30,7 +30,7 @@ class Ckeditor extends Model
         ]
     ];
     public function getImages($index){
-        $response=$this->where('index',$index)->orderBy('id', 'desc')->get();
+        $response=$this->where('index',$index)->orderBy('pos', 'asc')->get();
         return $response;
 
     }

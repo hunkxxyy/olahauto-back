@@ -15,8 +15,16 @@ use Illuminate\Support\Facades\Input;
 class CkeditorController extends Controller
 {
     var $indexForImage='';
+    public function __construct()
+    {
+        $this->middleware('oauth',['except'=>['listOfImages']]);
+
+
+    }
     public function listOfImages(Request $request){
         $ck=new Ckeditor();
+
+
 
         return response()->json($ck->getImages($request['index']));
     }
@@ -54,6 +62,14 @@ class CkeditorController extends Controller
         return  $ck->getImages($this->indexForImage);
 
 
+    }
+    public function update (CreateCkeditorRequest $request, $id){
+        $ck=Ckeditor::find($id);
+
+        $ck->fill($request->all());
+        //   file_put_contents('hunk2.log', print_r($request->all(), true));
+        $ck->push();
+        return CommonFunction::response($ck);
     }
     private function saveKepek($path, $params,$file)
     {

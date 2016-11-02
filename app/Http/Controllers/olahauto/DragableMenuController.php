@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\olahauto;
 
 
+use App\DynamicHtml;
 use App\models\olahauto\Dragable_menu;
 use App\utils\CommonFunction;
 use Illuminate\Http\Request;
@@ -19,6 +20,7 @@ class DragableMenuController extends Controller
 
     public function __construct()
     {
+        $this->middleware('oauth',['except'=>['all']]);
 
         if (!$this->logger) $this->logger = new LogWrapper('DragableMenuController');
     }
@@ -61,6 +63,7 @@ class DragableMenuController extends Controller
 
         $id=(int)$id;
         $ItemGroup = Dragable_menu::find($id);
+      DynamicHtml::where('route', $ItemGroup['route'])->update(['route' => $request['route']]);
         $ItemGroup->fill($request->all());
         $ItemGroup->push();
 

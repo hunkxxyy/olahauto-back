@@ -19,7 +19,10 @@ class CreateDragableMenuTable extends Migration
             $table->integer('top')->default(0);
             $table->string('name', 500);
             $table->string('route', 500);
-            $table->text('description')->nullable();;
+            $table->string('style')->nullable();;
+            $table->boolean('editable')->default(1);
+            $table->boolean('admin_only')->default(0);
+            $table->text('description')->nullable();
             $table->boolean('archived')->default(false);
             $table->timestamps();
         });

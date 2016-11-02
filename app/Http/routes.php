@@ -9,11 +9,6 @@ Route::get('/', function () {
 /*todo: Megjegyzés az oauth2vel kapcsolatban
 a client secret ssh titkosított ez okoz problémát. Figyelj rá*/
 
-/*Authentication OAUTH2*/
-Route::post('oauth/acces_token','Auth\Oauth2Controller@loginPost');
-Route::get('oauth/exit/','Auth\Oauth2Controller@destroy');
-Route::get('oauth/usertype/','Auth\Oauth2Controller@usertype');
-Route::get('oauth/checkvalid/{token}','Auth\Oauth2Controller@checkValid');
 
 /*Navigation menu*/
 /*-------------------------------- Dragable --------------------------------------*/
@@ -40,7 +35,15 @@ Route::put('api/getcontent','DynamicHtmlControllers@getContent');
 Route::put('api/ckeditor/images/list','CkeditorController@listOfImages');
 Route::post('api/ckeditor/fileupload/','CkeditorController@store');
 Route::put('api/ckeditor/filedelete/{id}','CkeditorController@filedelete');
+Route::put('api/ckeditor/update/{id}','CkeditorController@update');
+/*-----------------------------------------SEARCH-----------------------------------------*/
+Route::get('api/search/{word}','SearchController@search');
 
+/*----------------------------------Authentication OAUTH2----------------------------------*/
+Route::post('auth/login','Auth\Oauth2Controller@loginPost');
+Route::get('auth/exit/','Auth\Oauth2Controller@destroy');
+Route::get('oauth/usertype/','Auth\Oauth2Controller@usertype');
+Route::get('oauth/checkvalid/{token}','Auth\Oauth2Controller@checkValid');
 
 
 

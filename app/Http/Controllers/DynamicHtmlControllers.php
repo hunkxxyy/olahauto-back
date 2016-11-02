@@ -14,20 +14,21 @@ class DynamicHtmlControllers extends Controller
 
     public function __construct()
     {
+        $this->middleware('oauth',['except'=>['getAll','getContent']]);
 
-        if (!$this->logger) $this->logger = new LogWrapper('DynamicHtmlControllers');
+        if (!$this->logger) $this->logger = new LogWrapper('DragableMenuController');
     }
     public function getAll()
     {
 
-       /* $all = DynamicHtml::all();
+        $all = DynamicHtml::all();
         $r=[];
         foreach ($all as $part) {
             if ($part['contents']=='') $part['contents']="Nincsen beállított contents";
             $r[$part['index']] =['id'=>$part['id'],'content'=>$part['contents'],'title'=>$part['title']] ;
         }
-        return response()->json($r);*/
-        return 'Heló <b>hunk</b>b>';
+        return response()->json($r);
+
     }
     public function getContent(Request $request)
     {

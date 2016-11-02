@@ -52,12 +52,17 @@ class Dragable_menu extends Model
 
     public function listAll()
     {
-        $list = $this->orderBy('parent_id')->where('archived', '=', 'false')->get()->toArray();
+        $list = $this->orderBy('parent_id')
+            ->where('archived', '=', 'false')
+
+            ->get()
+            ->toArray();
         //add chield class every item
         foreach ($list as &$group) {
             $group['chield'] = [];
             $group['menuType'] = 'haveSubMenu';
             $group['fontsize'] = (strlen($group['name'])>25)?'13px':'16px';
+            $group['style'] = ($group['menuType'])? json_decode( $group['style']) :'';
 
         }
         //set the order

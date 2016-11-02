@@ -12,8 +12,9 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
       //DB::statement("TRUNCATE TABLE users ");
-
-        $this->call('menusSeed');
+        $this->call('Oauth2ClientsSeed');
+        $this->call('UsersSeed');
+        // $this->call('menusSeed');
 
     }
 }

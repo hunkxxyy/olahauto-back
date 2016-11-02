@@ -12,11 +12,13 @@ class CreateCkeditorTable extends Migration
      */
     public function up()
     {
-        Schema::create('ckeditor', function (Blueprint $table) {
+        Schema::create('images', function (Blueprint $table) {
             $table->increments('id');
             $table->string('file');
             $table->string('filename');
-            $table->string('index');
+            $table->integer('pos');
+$table->string('index');
+$table->boolean('archived')->default(0);
 
 
             $table->timestamps();
@@ -30,6 +32,6 @@ class CreateCkeditorTable extends Migration
      */
     public function down()
     {
-        Schema::drop('ckeditor');
+        Schema::drop('images');
     }
 }
