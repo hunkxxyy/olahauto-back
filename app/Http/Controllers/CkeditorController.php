@@ -30,7 +30,7 @@ class CkeditorController extends Controller
     }
     public function store(CreateCkeditorRequest $request)
     {
-        file_put_contents('store_kep.log', print_r($request->all(), true));
+       // file_put_contents('store_kep.log', print_r($request->all(), true));
 
 
         $values = $request->all();
