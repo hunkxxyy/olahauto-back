@@ -42,7 +42,8 @@ class DynamicHtmlControllers extends Controller
     }
 
     public function update(Request $request)
-    {file_put_contents('store_kep.log', print_r($request->all(), true));
+    {
+
         $html=new DynamicHtml();
 
        $record= $html->where('route',$request['route'])->first();
