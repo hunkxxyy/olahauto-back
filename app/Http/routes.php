@@ -45,10 +45,22 @@ Route::get('auth/exit/','Auth\Oauth2Controller@destroy');
 Route::get('oauth/usertype/','Auth\Oauth2Controller@usertype');
 Route::get('oauth/checkvalid/{token}','Auth\Oauth2Controller@checkValid');
 
+/*----------------------------------TERMÉKEK----------------------------------*/
+Route::get('api/termekek/all','TermekController@all');
+Route::get('api/termekek/csoport/{id}','TermekController@getCsoport');
+Route::get('api/termekek/get/{id}','TermekController@getTermek');
+
+Route::put('api/termekek/modify/{id}','TermekController@updateTermek');
+Route::put('api/termekek/delete/{id}','TermekController@deleteTermek');
+Route::post('api/termekek/new','TermekController@addNew');
+Route::put('api/termekek/getlist','TermekController@getList');
+
+//Route::get('getMenuForDragable','TermekController@getMenuForDragable');
 
 
 
 
+/*
 
 //ingatlanlotto
 Route::get('Szintek/menu','SzintekController@menu');
@@ -74,7 +86,7 @@ Route::get('register/admin',function(){$user = new App\User();
 
 
 
-Route::get('git/pull','GitController@pull');
+Route::get('git/pull','GitController@pull');*/
 
 /*-------------------------------- USER --------------------------------------*/
 Route::get('api/users/{query}','UserController@listWithFilters');

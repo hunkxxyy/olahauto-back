@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Dragable_menu extends Model
 {
     protected $table = 'dragable_menu';
-    protected $fillable = ['name', 'top', 'description', 'parent_id', 'archived','route'];
+    protected $fillable = ['name', 'top', 'description', 'parent_id', 'archived','route','related_id','background','font_color'];
     protected $hidden = ['updated_at', 'created_at', 'archived'];
 
 

@@ -1,18 +1,1 @@
-Array
-(
-    [PATH] => images/banner
-    [INDEX] => banner-images
-    [filename] => undefined
-    [params] => [{"width":844,"height":473,"subdir":"nagy"}]
-    [file] => Illuminate\Http\UploadedFile Object
-        (
-            [test:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 
-            [originalName:Symfony\Component\HttpFoundation\File\UploadedFile:private] => Chrysanthemum.jpg
-            [mimeType:Symfony\Component\HttpFoundation\File\UploadedFile:private] => image/jpeg
-            [size:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 879394
-            [error:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 0
-            [pathName:SplFileInfo:private] => C:\wamp64\tmp\phpC986.tmp
-            [fileName:SplFileInfo:private] => phpC986.tmp
-        )
-
-)
+SZÁMOLSZÁMOL
